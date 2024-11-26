@@ -1,15 +1,15 @@
 
 > chromatic-demo@0.1.0 build-storybook /Users/minjiehuang/Code/cicd-sb
-> storybook build "--output-dir=/var/folders/qd/d3gq474s4hq59ktqvl0xnms80000gn/T/chromatic--34236-zQuumnKnuXkI"
+> storybook build "--output-dir=/var/folders/qd/d3gq474s4hq59ktqvl0xnms80000gn/T/chromatic--35136-IcKh0SPs8Yng"
 
 @storybook/cli v7.6.20
 
-info => Cleaning outputDir: /var/folders/qd/d3gq474s4hq59ktqvl0xnms80000gn/T/chromatic--34236-zQuumnKnuXkI
+info => Cleaning outputDir: /var/folders/qd/d3gq474s4hq59ktqvl0xnms80000gn/T/chromatic--35136-IcKh0SPs8Yng
 info => Loading presets
 info => Building manager..
-info => Manager built (89 ms)
+info => Manager built (83 ms)
 info => Building preview..
-info => Copying static files: /Users/minjiehuang/Code/cicd-sb/node_modules/.pnpm/@storybook+manager@7.6.20/node_modules/@storybook/manager/static at /var/folders/qd/d3gq474s4hq59ktqvl0xnms80000gn/T/chromatic--34236-zQuumnKnuXkI/sb-common-assets
+info => Copying static files: /Users/minjiehuang/Code/cicd-sb/node_modules/.pnpm/@storybook+manager@7.6.20/node_modules/@storybook/manager/static at /var/folders/qd/d3gq474s4hq59ktqvl0xnms80000gn/T/chromatic--35136-IcKh0SPs8Yng/sb-common-assets
 WARN No story files found for the specified pattern: src/**/*.mdx
 info Using Babel compiler
 info Addon-docs: using MDX2
@@ -24,9 +24,9 @@ WARN   609.3325c29b.iframe.bundle.js (728 KiB)
 WARN entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
 WARN Entrypoints:
 WARN   main (1000 KiB)
-WARN       runtime~main.a3cfdb56.iframe.bundle.js
+WARN       runtime~main.8fbc30ee.iframe.bundle.js
 WARN       621.80b65c12.iframe.bundle.js
 WARN       main.f5c0721b.iframe.bundle.js
 WARN 
-info => Preview built (4.99 s)
-info => Output directory: /var/folders/qd/d3gq474s4hq59ktqvl0xnms80000gn/T/chromatic--34236-zQuumnKnuXkI
+info => Preview built (4.38 s)
+info => Output directory: /var/folders/qd/d3gq474s4hq59ktqvl0xnms80000gn/T/chromatic--35136-IcKh0SPs8Yng
