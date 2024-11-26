@@ -11,7 +11,7 @@ type Story = StoryObj<typeof Button>;
 
 export const Primary: Story = {
   args: {
-    label: 'should be updated',
+    label: '222',
     variant: 'primary',
   },
 };
