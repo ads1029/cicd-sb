@@ -19,8 +19,32 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: Publish to Chromatic
+        id: chromatic
         uses: chromaui/action@v1
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           onlyChanged: true
-          exitZeroOnChanges: false
+          exitZeroOnChanges: true
+      - name: Comment PR
+        if: ${{ steps.chromatic.outputs.storybookUrl }}
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const storybookUrl = '${{ steps.chromatic.outputs.storybookUrl }}';
+            const buildUrl = '${{ steps.chromatic.outputs.buildUrl }}';
+            
+            const message = `## Visual Changes Detected 🎨
+            
+            Changes have been detected in your Storybook components.
+            
+            📸 [View Changes in Chromatic](${buildUrl})
+            📚 [View Storybook](${storybookUrl})
+            
+            Please review the visual changes and ensure they are intentional.`;
+            
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: message
+            });
