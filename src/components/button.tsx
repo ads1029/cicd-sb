@@ -16,7 +16,7 @@ export function Button({ label, variant = 'primary' }: ButtonProps) {
       cursor: 'pointer',
       ...variant === 'primary' 
         ? {
-            backgroundColor: '#3b82f6',
+            backgroundColor: '#ef4444',
             color: 'white',
           }
         : {

@@ -21,4 +21,4 @@ export const Secondary: Story = {
     label: 'another one!',
     variant: 'secondary',
   },
-}; 
+};
