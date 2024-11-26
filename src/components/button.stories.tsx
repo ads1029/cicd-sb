@@ -11,14 +11,14 @@ type Story = StoryObj<typeof Button>;
 
 export const Primary: Story = {
   args: {
-    label: 'Click me',
+    label: 'A change happens',
     variant: 'primary',
   },
 };
 
 export const Secondary: Story = {
   args: {
-    label: 'Click me',
+    label: 'another one!',
     variant: 'secondary',
   },
-}; 
+};

@@ -1,5 +1,2 @@
 node_modules
-.storybook
-.chromatic
 .env
-.github
