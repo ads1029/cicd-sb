@@ -42,10 +42,18 @@ jobs:
             
             Changes have been detected in your Storybook components.
             
-            📸 [View Changes in Chromatic](${buildUrl})
-            📚 [View Storybook](${storybookUrl})
+            ### Review Changes
+            📸 [View Visual Comparison](${buildUrl}/review) - See side-by-side & diff views
+            🔍 [View Build Details](${buildUrl}) - See all component changes
+            📚 [View Storybook](${storybookUrl}) - Preview the latest version
             
-            Please review the visual changes and ensure they are intentional.`;
+            ### What to Look For
+            - Check component layout and spacing
+            - Verify color changes are intentional
+            - Review text content updates
+            - Ensure responsive behavior
+            
+            Click the "Visual Comparison" link to see detailed before/after views of all changes.`;
             
             github.rest.issues.createComment({
               issue_number: context.issue.number,
